@@ -1,15 +1,15 @@
-<form action="/messages">
+<form method="post" action="/messages">
     <div>
         <label>Author:</label>
-        <input type="text" name="author" value="<%=  @message.author %>">
+        <input type="text" name="author">
     </div>
     <div>
         <label>Subject:</label>
-        <input type="text" name="title" value="<%=  @message.title %>">
+        <input type="text" name="title">
     </div>
     <div>
         <label>Content:</label>
-        <input type="text" name="content" value="<%=  @message.content %>">
+        <input type="text" name="content">
     </div>
     <div> 
         <input type="submit" value="Submit">
