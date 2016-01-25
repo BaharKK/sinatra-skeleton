@@ -1,15 +1,20 @@
 <p>
 Author: <%= @message.author %>
 </p>
-
+<p>
+<a href="/messages/show_others/<%= @message.author %>">Other Messages from this Author</a>
+</p>
 <p>
 <%= @message.content %>
 </p> 
 <p>
-<%= @message.url %>
+<a href="/messages/<%= @message.id %>"><%= @message.url %></a>
 </p>
 <p>
 <%= @message.created_at %>
 </p>
 <hr/>
 <a href="/messages">Back to All Messages</a> 
+
+
+

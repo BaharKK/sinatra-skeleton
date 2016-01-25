@@ -16,6 +16,11 @@ end
     erb :"messages/show"
   end
 
+  get '/messages/show_others/:author' do 
+    @messages = Message.where(author: params[:author])
+    erb :"messages/show_others"
+  end
+
   post '/messages' do 
     @message = Message.new(
         content: params[:content],
