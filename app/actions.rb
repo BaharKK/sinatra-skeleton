@@ -11,11 +11,6 @@ end
     erb :'messages/new'
   end
   # binding.pry
-   get '/messages/:id' do
-    @message = Message.find params[:id]
-    erb :"messages/show"
-  end
-
   get '/messages/:id' do
     @message = Message.find params[:id]
     erb :"messages/show"
